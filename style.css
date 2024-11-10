@@ -330,3 +330,28 @@ ul {
   border: none;
   cursor: pointer;
 }
+
+.form_result {
+  background-color: white; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+  padding: 30px; 
+  width: 300px; 
+  text-align: center;
+  margin: 20px auto; 
+}
+
+.form_result h1 {
+  font-size: 24px; 
+  margin-bottom: 20px; 
+  color: #2C3E50 ;
+}
+
+.form_result p {
+  font-size: 16px;
+  margin: 10px 0; 
+  padding: 10px;
+  border: 1px solid #3498DB ;
+  border-radius: 5px; 
+  background-color: #fafafa; 
+}

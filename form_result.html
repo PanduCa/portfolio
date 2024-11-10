@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../static/css/style.css">
+    </head>
+<body>
+    {% block content %}
+    <div class="form_result">
+        <h1><b> Gracias por rellenar el formulario</b></h1>
+        <p><b>Email:</b> {{email}}</p>
+        <p><b>Comentario:</b> {{comment}}</p>
+    </div>
+    
+    {% endblock %}
+</body>
+</html>

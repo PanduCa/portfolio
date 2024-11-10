@@ -56,7 +56,7 @@ Me considero una persona creativa y resolutiva, siempre buscando nuevos desafío
                 height="150"
               />
               <span class="skill__info">Lenguajes</span>
-              <input class="skill__button" type="submit" name="button_python" value="SHOW PROJECT">
+              <a class="skill__button" href="https://github.com/PanduCa/portfolio" target="_blank">PORTAFOLIO</a>
             </li>
             <li class="skills-list__skill skill">
               <img
@@ -67,7 +67,7 @@ Me considero una persona creativa y resolutiva, siempre buscando nuevos desafío
                 height="150"
               />
               <span class="skill__info">Proyecto</span>
-              <input class="skill__button" type="submit" name="button_discord" value="SHOW PROJECT">
+              <a class="skill__button" href="https://github.com/PanduCa/Discord_BOT" target="_blank">DISCORD</a>
             </li>
             <li class="skills-list__skill skill">
               <img
@@ -78,7 +78,7 @@ Me considero una persona creativa y resolutiva, siempre buscando nuevos desafío
                 height="150"
               />
               <span class="skill__info">Desarollo Web</span>
-              <input class="skill__button" type="submit" name="button_html" value="SHOW PROJECT">
+              <a class="skill__button" href="https://github.com/PanduCa/Discord_BOT" target="_blank">HTML</a>
             </li>
             <li class="skills-list__skill skill">
               <img
@@ -89,7 +89,7 @@ Me considero una persona creativa y resolutiva, siempre buscando nuevos desafío
                 height="150"
               />
               <span class="skill__info">Base de datos</span>
-              <input class="skill__button" type="submit" name="button_db" value="SHOW PROJECT">
+              <a class="skill__button" href="https://github.com/PanduCa/Discord_BOT" target="_blank">DATABASE</a>
             </li>
           </ul>
         </form>
@@ -101,18 +101,25 @@ Me considero una persona creativa y resolutiva, siempre buscando nuevos desafío
         {% endif %}
       </section>
       <!-- Formulario de contacto -->
+
+      
+    {% block content %}
       <section class="main__feedback feedback" id="feedback">
-        <h2 class="feedback__title">Retroalimentación</h2>
-        <form action="" method="POST" class="feedback__form form">
+      <h2 class="feedback__title">Retroalimentación</h2>
+      <form action="{{ url_for('submit_form') }}" method="post" class="form">
           <label for="email">
             <input type="email" class="form__input" name="email" id="email" placeholder="E-mail" required>
           </label>
           <label for="text">
-            <textarea name="text" class="form__input" id="text" cols="70" rows="10" required placeholder="Comment"></textarea>
+            <textarea class="form__input" name="comment" id="text" cols="70" rows="10" required placeholder="Comment"></textarea>
           </label>
           <button class="form__button" type="submit">Enviar</button>
         </form>
       </section>
+    </form>
+    {% endblock %}
+
+      
     </main>
     <!-- Pie de página con enlaces a redes sociales -->
     <footer>
